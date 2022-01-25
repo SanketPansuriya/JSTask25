@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+      <h1 id="heading">JavaScript Task</h1>
+      <p class="paragraph">Hello there this is Sanket, from Bacancy</p>
+      <ul class="MyList">
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-2</li>
+        <li>Item-4</li>
+      </ul>
+      <p class="paragraph">This is end of the file</p>
+  </div>
+</body>
+<script>
+  var heading = document.getElementById('heading');
+  console.log("From getElementById :", heading);
+
+  var main = document.querySelector(".main");
+  console.log("From querySelector: ", main);
+  
+  var paraAll = document.querySelectorAll("p");
+  console.log("From querySelectorAll: ", paraAll);
+
+  var paragraph = document.getElementsByClassName("MyList");
+  console.log("From getElementsByClassName for last element of 'p' tag", paragraph[paragraph.length-1]);
+
+  var listItem = document.getElementsByTagName("li");
+  console.log("From getElementByTagName: ", listItem);
+</script>
+</html>
